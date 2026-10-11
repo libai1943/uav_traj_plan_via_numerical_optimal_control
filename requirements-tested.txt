@@ -1,0 +1,4 @@
+# Versions used for the recorded Windows / Python 3.12 validation run.
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2

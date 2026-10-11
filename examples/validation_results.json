@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-11",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "matlab": "R2021b Update 7 + Optimization Toolbox",
+  "runs": [
+    {
+      "name": "two_columns",
+      "objective": 0.9913876540546795,
+      "iterations": 30,
+      "seconds": 5.338650799996685,
+      "checks": {
+        "max_scaled_constraint_violation": 2.260017693822558e-10,
+        "min_dense_clearance_m": 22.04819727870951,
+        "min_whole_box_clearance_m": 8.077842940914458,
+        "max_dense_corridor_violation_m": 0.0,
+        "max_interval_position_defect_m": 0.10536316790651544,
+        "spline_certified_clearance_m": 41.41908221609638,
+        "open_loop_terminal_position_error_m": 1.671708069340511,
+        "open_loop_min_clearance_m": 22.553377525837092
+      },
+      "derivative_check_max_error": 1.113562575483229e-09,
+      "implementation": "python"
+    },
+    {
+      "name": "four_columns",
+      "objective": 2.0241239593782323,
+      "iterations": 31,
+      "seconds": 6.3255636999965645,
+      "checks": {
+        "max_scaled_constraint_violation": 2.0204180920894527e-10,
+        "min_dense_clearance_m": 21.052109578645883,
+        "min_whole_box_clearance_m": 8.085331824415874,
+        "max_dense_corridor_violation_m": 0.0,
+        "max_interval_position_defect_m": 0.18146589417398015,
+        "spline_certified_clearance_m": 39.78301306268326,
+        "open_loop_terminal_position_error_m": 1.2535093706968639,
+        "open_loop_min_clearance_m": 21.407365767597817
+      },
+      "derivative_check_max_error": 1.2222358236613218e-08,
+      "implementation": "python"
+    },
+    {
+      "name": "five_columns",
+      "objective": 1.3502999848061394,
+      "iterations": 44,
+      "seconds": 12.000256699990132,
+      "checks": {
+        "max_scaled_constraint_violation": 4.458320272340702e-11,
+        "min_dense_clearance_m": 36.99778750690821,
+        "min_whole_box_clearance_m": 8.084138358888133,
+        "max_dense_corridor_violation_m": 0.0,
+        "max_interval_position_defect_m": 0.02971967912970754,
+        "spline_certified_clearance_m": 35.71957251549988,
+        "open_loop_terminal_position_error_m": 0.30379023464560223,
+        "open_loop_min_clearance_m": 36.997103958587516
+      },
+      "derivative_check_max_error": 1.76365233528486e-08,
+      "implementation": "python"
+    },
+    {
+      "name": "two_columns",
+      "objective": 1.0093384234553522,
+      "iterations": 43,
+      "seconds": 3.9896819,
+      "checks": {
+        "max_scaled_constraint_violation": 1.7393494052460788e-14,
+        "min_dense_clearance_m": 22.776967629239024,
+        "min_whole_box_clearance_m": 8.077842940914493,
+        "max_dense_corridor_violation_m": 0,
+        "max_interval_position_defect_m": 0.11018927089219506,
+        "spline_certified_clearance_m": 41.41908221609638,
+        "open_loop_terminal_position_error_m": 1.6717334069180059,
+        "open_loop_min_clearance_m": 23.295032773509718
+      },
+      "derivative_check_max_error": 4.6663899411214516e-09,
+      "implementation": "matlab",
+      "solver_exitflag": 1
+    },
+    {
+      "name": "four_columns",
+      "objective": 2.0223529889915715,
+      "iterations": 42,
+      "seconds": 3.0296121,
+      "checks": {
+        "max_scaled_constraint_violation": 5.13420324773269e-14,
+        "min_dense_clearance_m": 20.941599708548644,
+        "min_whole_box_clearance_m": 8.085331824415768,
+        "max_dense_corridor_violation_m": 0,
+        "max_interval_position_defect_m": 0.18183223632680878,
+        "spline_certified_clearance_m": 39.783013062683246,
+        "open_loop_terminal_position_error_m": 1.2645424252337716,
+        "open_loop_min_clearance_m": 21.30082235890258
+      },
+      "derivative_check_max_error": 9.294069513998693e-09,
+      "implementation": "matlab",
+      "solver_exitflag": 2
+    },
+    {
+      "name": "five_columns",
+      "objective": 1.3496136072777192,
+      "iterations": 51,
+      "seconds": 4.2246761,
+      "checks": {
+        "max_scaled_constraint_violation": 5.399359345042987e-13,
+        "min_dense_clearance_m": 37.00031096304265,
+        "min_whole_box_clearance_m": 8.084138358888303,
+        "max_dense_corridor_violation_m": 0,
+        "max_interval_position_defect_m": 0.029369416609919794,
+        "spline_certified_clearance_m": 35.71957251549991,
+        "open_loop_terminal_position_error_m": 0.328874992762855,
+        "open_loop_min_clearance_m": 37.00003892309374
+      },
+      "derivative_check_max_error": 2.232530960100121e-08,
+      "implementation": "matlab",
+      "solver_exitflag": 1
+    }
+  ],
+  "python_mpc": {
+    "rms_mpc_position_error_m": 1.6004455489558531,
+    "rms_open_loop_position_error_m": 45.28187893822059,
+    "min_sampled_mpc_clearance_m": 22.043404713205476,
+    "max_qp_projected_gradient_residual": 1.4273382926976996e-05
+  },
+  "matlab_mpc": {
+    "rms_mpc_position_error_m": 1.6005188017969336,
+    "rms_open_loop_position_error_m": 45.329578983182046,
+    "min_sampled_mpc_clearance_m": 22.771858705312425,
+    "max_qp_projected_gradient_residual": 1.419514784273268e-05
+  }
+}

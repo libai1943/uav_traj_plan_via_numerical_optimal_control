@@ -1,0 +1,19 @@
+{
+  "intervals": 40,
+  "duration_s": 36,
+  "safety_margin_m": 8,
+  "astar_extra_clearance_m": 30,
+  "grid_step_m": [20, 20, 10],
+  "search_lower_m": [0, -220, 80],
+  "search_upper_m": [600, 220, 180],
+  "state_lower": [-30, -220, 75, 15, -0.3, -0.9, -0.6],
+  "state_upper": [650, 220, 180, 25, 0.3, 0.9, 0.6],
+  "input_lower": [-2, 0.65, -0.4],
+  "input_upper": [2, 1.65, 0.4],
+  "start_state": [0, 0, 100, 20, 0, 0, 0],
+  "cases": [
+    {"name": "two_columns", "goal_state": [600, 0, 130, 20, 0, 0, 0], "columns": [[250, 0, 55], [430, -10, 45]]},
+    {"name": "four_columns", "goal_state": [600, 0, 150, 20, 0, 0, 0], "columns": [[180, -30, 32], [270, 15, 35], [360, -35, 32], [450, 20, 30]]},
+    {"name": "five_columns", "goal_state": [600, 0, 160, 20, 0, 0, 0], "columns": [[150, 65, 28], [225, -65, 28], [300, 70, 30], [375, -65, 28], [450, 65, 28]]}
+  ]
+}
